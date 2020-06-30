@@ -1,0 +1,7 @@
+prefix: "&6[&2Siegemasters&6]"
+frequency: 120
+messages:
+  - "&bThis is a WIP project! Please report any bugs!"
+  - "&bFeel free to ask questions in our Discord:&3 https://discord.gg/zSuMDrP"
+  - "&bType &3/join &bto join the game!"
+  - "&bType &3/loadout &bto edit your loadouts!"

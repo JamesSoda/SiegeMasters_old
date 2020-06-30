@@ -1,0 +1,82 @@
+name: SiegeMasters
+main: io.github.zaxarner.minecraft.castlesiege.CastleSiege
+version: 0.0.1
+description: SiegeMasters plugin
+author: Zaxarner
+api-version: '1.14'
+depends: [ProtocolLib]
+commands:
+  loadout:
+    description: "Edit your Loadouts"
+    permission: siegemasters.user
+    usage: "/<command>"
+    aliases: [loadouts,kit,kits]
+  join:
+    description: "Join the game!"
+    permission: siegemasters.user
+    usage: "/<command>"
+  exp:
+    description: "View your Exp., Exp. required to level up, and any Exp. Boosts"
+    permission: siegemasters.user
+    usage: "/<command>"
+    aliases: [xp,level,lvl]
+  vote:
+    description: "Vote for the server and receive an Exp. Boost!"
+    permission: siegemasters.user
+    usage: "/<command>"
+    aliases: [votes]
+  leave:
+    description: "Leave the game!"
+    permission: siegemasters.user
+    usage: "/<command>"
+  discord:
+    description: "Receive a link to join our Discord"
+    permission: siegemasters.user
+    usage: "/<command>"
+  end:
+    description: "Ends all current games!"
+    permission: siegemasters.admin
+    usage: "/<command>"
+  staffchat:
+    description: "Send a message to StaffChat or toggle it on or off"
+    permission: siegemasters.staff
+    usage: "/<command>"
+    aliases: [sc]
+  clearchat:
+    descrition: "Clears the chat"
+    permission: siegemasters.staff
+    usage: "/<command>"
+    aliases: [cc]
+  kick:
+    description: "Kick a player."
+    permission: siegemasters.staff
+    usage: "/<command> <player> <reason>"
+  mute:
+    description: "Mute a player."
+    permission: siegemasters.staff
+    usage: "/<command> <player> <reason> <time(in minutes)"
+  tempban:
+    description: "Temporarily ban a player."
+    permission: siegemasters.staff
+    usage: "/<command> <player> <reason> <time(in minutes)"
+  ban:
+    description: "Ban a player."
+    permission: siegemasters.staff
+    usage: "/<command> <player> <reason>"
+  resetplayer:
+    description: "Force a player to respawn and update their Loadout"
+    permission: siegemasters.admin
+    usage: "/<command> <player>"
+    aliases: [resetp]
+  lobby:
+    description: "Teleport to Spawn and give yourself the Lobby inventory"
+    permission: siegemasters.admin
+    usage: "/<command>"
+  creative:
+    description: "Join the Creative World!"
+    permission: siegemasters.user
+    usage: "/<command>"
+  pvp:
+    description: "Join the PVP World!"
+    permission: siegemasters.user
+    usage: "/<command>"

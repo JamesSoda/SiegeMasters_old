@@ -1,0 +1,640 @@
+# WEAPONS #
+dagger:
+  display-name: '&3Dagger'
+  material: IRON_HOE
+  lore:
+    - '&7Quickly move around'
+    - '&7and swiftly slice enemies'
+    - ' '
+    - '&7Damage: &f3'
+    - '&7Attack Delay: &f0.5 seconds'
+    - '&7Move Speed: &f+30%'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    damage: 3
+  attribute-modifiers:
+    - ATTACK_SPEED:-2
+    - MOVE_SPEED:.06
+  type: WEAPON,ONE-HANDED
+shortsword:
+  display-name: '&3Shortsword'
+  material: IRON_SWORD
+  lore:
+    - '&7A slender shortsword, providing'
+    - '&7a perfect perfect balance of'
+    - '&7damage and speed.'
+    - ' '
+    - '&7Damage: &f5'
+    - '&7Attack Delay: &f1 second'
+    - '&7Move Speed: &f+10%'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    damage: 5
+  attribute-modifiers:
+    - ATTACK_SPEED:-3
+    - MOVE_SPEED:0.02
+  type: WEAPON,ONE-HANDED
+battle-axe:
+  display-name: '&3Battle Axe'
+  material: IRON_AXE
+  lore:
+    - '&7A large battle axe capable of breaking shields.'
+    - '&7It can deal a lot of damage due to its weight,'
+    - '&7but this weight also slows you down.'
+    - ' '
+    - '&7Damage: &f6'
+    - '&7Attack Delay: &f1.25 seconds'
+    - '&7Move Speed: &f+0%'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    damage: 6
+  attribute-modifiers:
+    - ATTACK_SPEED:-3.2
+    - MOVE_SPEED:0.0
+  type: WEAPON,ONE-HANDED
+greatsword:
+  display-name: '&3Greatsword'
+  material: DIAMOND_SWORD
+  lore:
+    - '&7A heavy, two-handed sword'
+    - '&7perfect for those who prefer'
+    - '&7slow, methodical slices that'
+    - '&7deal great amounts of damage'
+    - ' '
+    - '&7Damage: &f7'
+    - '&7Attack Delay: &f1.5/second'
+    - '&7Move Speed: &f-20%'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    damage: 7
+  attribute-modifiers:
+    - ATTACK_SPEED:-3.3334
+    - MOVE_SPEED:-.04
+  type: WEAPON,TWO-HANDED
+great-axe:
+  display-name: '&3Great Axe'
+  material: DIAMOND_AXE
+  lore:
+    - '&7A massive, two-handed axe,'
+    - '&7capable of massive amounts of damage'
+    - '&7at the price of heavy and sluggish swings.'
+    - ' '
+    - '&7Damage: &f8'
+    - '&7Attack Delay: &f2 seconds'
+    - '&7Move Speed: &f-30%'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    damage: 8
+  attribute-modifiers:
+    - ATTACK_SPEED:-3.5
+    - MOVE_SPEED:-.06
+  type: WEAPON,TWO-HANDED
+bow:
+  display-name: '&3Bow'
+  material: BOW
+  lore:
+    - '&7A simple bow that allows for'
+    - '&7consistent from a distance, provided'
+    - '&7you know how to aim.'
+    - ' '
+    - '&7Arrow Damage: &f5'
+    - '&7Move Speed: &f-10%'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    damage: 1
+    arrow-damage: 3
+  attribute-modifiers:
+    - ATTACK_SPEED:0
+    - MOVE_SPEED:-.02
+  type: WEAPON, RANGED
+crossbow:
+  display-name: '&3Crossbow'
+  material: CROSSBOW
+  lore:
+    - '&7A heavy crossbow, capable of launching'
+    - '&7arrows great distances with heavy damage,'
+    - '&7provided you know how to aim.'
+    - ' '
+    - '&7Arrow Damage: &f8'
+    - '&7Move Speed: &f-25%'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    damage: 2
+    arrow-damage: 8
+  attribute-modifiers:
+    - ATTACK_SPEED:0
+    - MOVE_SPEED:-.05
+  type: WEAPON, RANGED
+arcane-fire:
+  display-name: '&3Arcane Fire'
+  material: GRAY_DYE
+  lore:
+    - '&7Launch a fireball'
+    - '&7in a target direction'
+    - ' '
+    - '&7Cost: &f30 &3Magick'
+    - '&7Cooldown: &f8 seconds'
+    - '&7Damage: &f4'
+    - '&7Radius: &f5'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 30
+    cooldown: 8
+    speed: 2.0
+    radius: 5
+    damage: 4
+  type: ABILITY,MAGICK,DAMAGE
+arcane-shield:
+  display-name: '&3Arcane Shield'
+  material: LIGHT_BLUE_DYE
+  lore:
+    - '&7Grant your allies a shield'
+    - '&7that absorbs damage'
+    - ' '
+    - '&7Cost: &f40 &3Magick'
+    - '&7Cooldown: &f16 seconds'
+    - '&7Shield Strength: &f2'
+    - '&7Radius: &f5'
+    - '&7Duration: &f8 seconds'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 40
+    cooldown: 16
+    amplifier: 2
+    range: 5
+    duration: 8
+    keys: 2
+  type: ABILITY,MAGICK,SUPPORT
+bastion:
+  display-name: '&3Bastion'
+  material: LIGHT_BLUE_DYE
+  lore:
+    - '&7Absorb damage that would have'
+    - '&7been dealt to nearby by allies'
+    - ' '
+    - '&7Cost: &f40 &3Magick'
+    - '&7Cooldown: &f16 seconds'
+    - '&7Radius: &f5'
+    - '&7Duration: &f30 seconds'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 40
+    cooldown: 16
+    range: 10
+    duration: 8
+    keys: 2
+  type: ABILITY,MAGICK,SUPPORT
+defiance:
+  display-name: '&3Defiance'
+  material: LIGHT_GRAY_DYE
+  lore:
+    - '&7Reflect a percentage of all damage taken'
+    - '&7back on to enemies'
+    - ' '
+    - '&7Cost: &f50 &3Magick'
+    - '&7Cooldown: &f12 seconds'
+    - '&7Duration: &f4 seconds'
+    - '&7Percentage: &f50%'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 50
+    cooldown: 12
+    duration: 4
+    percent: 50
+    keys: 1
+  type: ABILITY,MAGICK,UTILITY
+disengage:
+  display-name: '&3Disengage'
+  material: GREEN_DYE
+  lore:
+    - '&7Launch yourself backwards to'
+    - '&7dodge incoming attacks'
+    - ' '
+    - '&7Cost: &f30 &3Magick'
+    - '&7Cooldown: &f8 seconds'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 30
+    cooldown: 8
+    strength: 1.15
+  type: ABILITY,STAMINA,MOVEMENT
+endurance:
+  display-name: '&3Endurance'
+  material: LIGHT_GRAY_DYE
+  lore:
+    - '&7Consume all of your &3Magick'
+    - '&7in order to regain a percentage'
+    - '&7of it back as &4Health'
+    - ' '
+    - '&7Cost: &fALL &3Magick'
+    - '&7Percentage: &f30%'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cooldown: 14
+    percent: 30
+  type: ABILITY,STAMINA,UTILITY
+ensnare:
+  display-name: '&3Ensnare'
+  material: LIGHT_GRAY_DYE
+  lore:
+    - '&7Magickally prevent an enemy from moving'
+    - ' '
+    - '&7Cost: &f45 &3Magick'
+    - '&7Cooldown: &f14 seconds'
+    - '&7Duration: &f1 seconds'
+    - '&7Range: &f7'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 45
+    cooldown: 14
+    duration: 1
+    range: 7
+    keys: 2
+  type: ABILITY,MAGICK,UTILITY
+ground-slam:
+  display-name: '&3Ground Slam'
+  material: GRAY_DYE
+  lore:
+    - '&7Leap into the air'
+    - '&7and then slam back to the ground'
+    - '&7to damage enemies around you'
+    - ' '
+    - '&7Cost: &f40 &3Magick'
+    - '&7Cooldown: &f14 seconds'
+    - '&7Damage: &f5'
+    - '&7Radius: &f4'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 40
+    cooldown: 14
+    damage: 5
+    strength: 1.25
+    range: 4
+    keys: 1
+  type: ABILITY,STAMINA,DAMAGE
+leap:
+  display-name: '&3Leap'
+  material: GREEN_DYE
+  lore:
+    - '&7Leap into the air'
+    - ' '
+    - '&7Cost: &f40 &3Magick'
+    - '&7Cooldown: &f10 seconds'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 40
+    cooldown: 10
+    strength: 1.25
+  type: ABILITY,STAMINA,MOVEMENT
+mark-of-undying:
+  display-name: '&3Mark of Undying'
+  material: LIGHT_BLUE_DYE
+  lore:
+    - '&7Mark an ally, preventing the next fatal damage'
+    - '&7dealt to them within a certain time'
+    - ''
+    - '&7Cost: &f50 &3Magick'
+    - '&7Cooldown: &f14 seconds'
+    - '&7Duration: &f4 seconds'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 50
+    cooldown: 14
+    duration: 4
+    range: 12
+  TYPE: ABILITY,MAGICK,SUPPORT
+radiance:
+  display-name: '&3Radiance'
+  material: LIGHT_BLUE_DYE
+  lore:
+    - '&4Heal &7a target Ally'
+    - ' '
+    - '&7Cost: &f40 &3Magick'
+    - '&7Cooldown: &f10 seconds'
+    - '&7Amount: &f6 &4Health'
+    - '&7Range: &f12'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 40
+    cooldown: 10
+    range: 12
+    amount: 6
+  type: ABILITY,MAGICK,SUPPORT
+repulse:
+  display-name: '&3Repulse'
+  material: LIGHT_GRAY_DYE
+  lore:
+    - '&7Push players, including you, away from'
+    - '&7your target location'
+    - ' '
+    - '&7Cost: &f30 &3Magick'
+    - '&7Cooldown: &f11 seconds'
+    - '&7Radius: &f6'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 30
+    cooldown: 11
+    range: 5
+    strength: 1.5
+    radius: 6
+  type: ABILITY,MAGICK,UTILITY
+ricochet:
+  display-name: '&3Ricochet'
+  material: GRAY_DYE
+  lore:
+    - '&7Conjure a barrage of six magickal arrows'
+    - '&7that bounce off of solid surfaces'
+    - ' '
+    - '&7Cost: &f30 &3Magick'
+    - '&7Cooldown: &f8 seconds'
+    - '&7Damage: &f4'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 30
+    cooldown: 8
+    arrows: 6
+    spread: 6.0
+    speed: 2.0
+    bounces: 4
+    damage: 2
+  type: ABILITY,MAGICK,DAMAGE
+shield-bash:
+  display-name: '&3Shield Bash'
+  material: GRAY_DYE
+  lore:
+    - '&7Charge forward and damage enemies in'
+    - '&7your vicinity.'
+    - ' '
+    - '&7Cost: &f35 &3Magick'
+    - '&7Cooldown: &f9 seconds'
+    - '&7Damage: &f6'
+    - '&7Radius: &f4'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 35
+    cooldown: 9
+    strength: 1.75
+    damage: 6
+    radius: 4
+  type: ABILITY,STAMINA,DAMAGE
+silence:
+  display-name: '&3Silence'
+  material: LIGHT_GRAY_DYE
+  lore:
+    - '&7Silence a target enemy, preventing'
+    - '&7them from using abilities.'
+    - ' '
+    - '&7Cost: &f50 &3Magick'
+    - '&7Cooldown: &f14 seconds'
+    - '&7Duration: &f3 seconds'
+    - '&7Range: &f14'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 50
+    cooldown: 14
+    duration: 3
+    range: 14
+    keys: 2
+  type: ABILITY,MAGICK,UTILITY
+singe:
+  display-name: '&3Singe'
+  material: GRAY_DYE
+  lore:
+    - '&7Set enemies around you aflame.'
+    - ' '
+    - '&7Cost: &f40 &3Magick'
+    - '&7Cooldown: &f12 seconds'
+    - '&7Duration: &f5 seconds'
+    - '&7Radius: &f5'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 40
+    cooldown: 12
+    duration: 5
+    radius: 5
+    keys: 1
+  type: ABILITY,MAGICK,DAMAGE
+swap:
+  display-name: '&3Swap'
+  material: LIGHT_GRAY_DYE
+  lore:
+    - '&7Swap positions with an enemy'
+    - ' '
+    - '&7Cost: &f40 &3Magick'
+    - '&7Cooldown: &f14 seconds'
+    - '&7Range: &f12'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 40
+    cooldown: 14
+    range: 12
+  type: ABILITY,MAGICK,UTILITY
+taunt:
+  display-name: '&3Taunt'
+  material: LIGHT_GRAY_DYE
+  lore:
+    - '&7Pull enemies towards you,'
+    - '&7into melee range'
+    - ' '
+    - '&7Cost: &f40 &3Magick'
+    - '&7Cooldown: &f12 seconds'
+    - '&7Radius: &f7'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 40
+    cooldown: 12
+    radius: 7
+    strength: 1.6
+    keys: 1
+  type: ABILITY,MAGICK,UTILITY
+tomb:
+  display-name: '&3Tomb'
+  material: LIGHT_GRAY_DYE
+  lore:
+    - '&7Quickly encase yourself in'
+    - '&7a tomb of Obsidian'
+    - ' '
+    - '&7Cost: &f30 &3Magick'
+    - '&7Cooldown: &f10 seconds'
+    - '&7Duration: &f4 seconds'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 30
+    cooldown: 10
+    radius: 3
+    duration: 4
+    keys: 1
+  type: ABILITY,MAGICK,UTILITY
+warp:
+  display-name: '&3Warp'
+  material: GREEN_DYE
+  lore:
+    - '&7Warp to target location'
+    - ' '
+    - '&7Cost: &f30 &3Magick'
+    - '&7Cooldown: &f6 seconds'
+    - '&7Range: &f7'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    cost: 30
+    cooldown: 6
+    range: 7
+  type: ABILITY,MAGICK,MOVEMENT
+zephyr:
+  display-name: '&3Zephyr'
+  material: GREEN_DYE
+  lore:
+    - '&7Reserves Magick to makes you lighter'
+    - '&7than air allowing you to jump higher'
+    - ' '
+    - '&7Reserves: &f40 &3Magick'
+  flags:
+    - HIDE_ATTRIBUTES
+  misc:
+    amplifier: 1
+  attribute-modifiers:
+    - MAX_MAGICK:-40.0
+  type: ABILITY,MAGICK,MOVEMENT,PASSIVE
+cooldown-item:
+  display-name: '&4BROKEN'
+  material: BOOK
+  flags:
+    - HIDE_ATTRIBUTES
+hatchet:
+  display-name: '&3Sledgehammer'
+  material: WOODEN_AXE
+  lore:
+    - '&7Use this &3Sledgehammer &7to'
+    - '&7break down &3Barricades'
+  flags:
+    - HIDE_ATTRIBUTES
+  type: TOOL
+building-supplies:
+  display-name: '&3Building Supplies'
+  material: STICK
+  amount: 4
+  lore:
+    - '&7Used in the construction of &3Barricades'
+    - '&7Hold in your main hand to view possible'
+    - '&7locations for &3Barricades&7.'
+    - ''
+    - '&8[Right-Click] while near a Barricade'
+    - '&8Can be replenished at Crafting Tables'
+  type: TOOL
+siege-ladder:
+  display-name: '&3Siege Ladder'
+  material: SCAFFOLDING
+  amount: 6
+  lore:
+    - '&7Use these to scale tall walls'
+  type: TOOL
+shield:
+  display-name: '&3Shield'
+  material: SHIELD
+  lore:
+    - '&7Provides armor and blocks projectiles'
+    - ' '
+    - '&8If used with a one-handed weapon,'
+    - '&8the shield is put into the off-hand slot'
+    - ' '
+    - '&7Move Speed: &f-25%'
+  type: TOOL,SHIELD
+  attribute-modifiers:
+    - MOVE_SPEED:-0.05
+arrows:
+  display-name: '&3Arrows'
+  material: ARROW
+  amount: 24
+  lore:
+    - '&7Plain, old arrows'
+    - ' '
+    - '&8Can be replenished at Fletching Tables'
+  type: TOOL,ARROW
+weightless-arrows:
+  display-name: '&3Weightless Arrows'
+  material: ARROW
+  amount: 16
+  lore:
+    - '&7These arrows can travel'
+    - '&7forever without falling to the earth'
+    - ' '
+    - '&8Can be replenished at Fletching Tables'
+  type: TOOL,ARROW
+regeneration-potion:
+  display-name: '&3Regeneration Potion'
+  material: POTION
+  lore:
+    - '&7This magical potion'
+    - '&7gives the consumer regeneration'
+    - ' '
+    - '&8Can be replenished at Brewing Stands'
+    - ' '
+    - '&7Amount: &f12 &4Health&7/&f8 seconds'
+  type: TOOL,POTION
+  flags:
+    - HIDE_POTION_EFFECTS
+  misc:
+    heal-amount: 12
+    delay: 30
+speed-potion:
+  display-name: '&3Speed Potion'
+  material: POTION
+  lore:
+    - '&7This magical potion'
+    - '&7gives the consumer a speed boost'
+    - ' '
+    - '&8Can be replenished at Brewing Stands'
+    - ' '
+    - '&7Move Speed: &f+25%'
+    - '&7Duration: &f6 seconds'
+  type: TOOL,POTION
+  flags:
+    - HIDE_POTION_EFFECTS
+  misc:
+    boost: 0.05
+    duration: 6
+volatile-brew:
+  display-name: '&3Volatile Brew'
+  material: SPLASH_POTION
+  lore:
+    - '&7Throw a cask filled with a combination of'
+    - '&7chemistry and magic that explodes on contact'
+    - ' '
+    - '&8Can be replenished at Brewing Stands'
+    - ' '
+    - '&7Damage: &f8'
+    - '&7Radius: &f6'
+  type: TOOL,POTION
+  flags:
+    - HIDE_POTION_EFFECTS
+  misc:
+    speed: 1.5
+    radius: 6
+    damage: 8
